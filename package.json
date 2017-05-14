@@ -1,12 +1,25 @@
 {
   "name": "burger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "burger homework",
   "main": "server.js",
+  "dependencies": {
+    "express-handlebars": "^3.0.0",
+    "gitignore": "^0.6.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Dennis Canlas",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canlas1/burger.git"
+  },
+  "author": "Dennis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/canlas1/burger/issues"
+  },
+  "homepage": "https://github.com/canlas1/burger#readme"
 }
