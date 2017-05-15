@@ -1,7 +1,7 @@
 {
-  "name": "burger",
+  "name": "buger",
   "version": "1.0.1",
-  "description": "burger homework",
+  "description": "new package.json",
   "main": "server.js",
   "dependencies": {
     "express-handlebars": "^3.0.0",

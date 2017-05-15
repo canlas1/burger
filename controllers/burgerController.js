@@ -16,35 +16,30 @@ router.get("/", function(req, res) {
   });
 });
 
-router.post("/", function(req, res) {
-  burger.create([
-    "name", "devoured"
-  ], [
-    req.body.name, req.body.devoured
-  ], function() {
+router.post("/burger/create", function(req, res) {
+  burger.create(req.body.name, function(result) {
+    console.log(result)
     res.redirect("/");
   });
 });
 
-router.put("/:id", function(req, res) {
-  var condition = "id = " + req.params.id;
-
-  console.log("condition", condition);
-
-  burger.update({
-    devoured: req.body.devoured
-  }, condition, function() {
+//getting ID from index input
+router.put("/burgers/eat", function(req, res) {
+  burger.eat(req.body.burger_id, function(result){
+    console.log(result);
     res.redirect("/");
   });
 });
 
-router.delete("/:id", function(req, res) {
-  var condition = "id = " + req.params.id;
 
-  burger.delete(condition, function() {
+//getting ID from index input
+router.put("/burgers/regurgitate", function(req, res) {
+  burger.regurgitate(req.body.burger_id, function(result){
+    console.log(result);
     res.redirect("/");
   });
 });
+
 
 // Export routes for server.js to use.
 module.exports = router;
