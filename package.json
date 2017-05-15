@@ -1,15 +1,15 @@
 {
-  "name": "buger",
-  "version": "1.0.1",
-  "description": "new package.json",
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "express-handlebars": "^3.0.0",
-    "gitignore": "^0.6.0",
     "method-override": "^2.3.8",
-    "mysql": "^2.13.0"
+    "mysql": "^2.13.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
@@ -20,7 +20,8 @@
     "type": "git",
     "url": "git+https://github.com/canlas1/burger.git"
   },
-  "author": "Dennis",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/canlas1/burger/issues"
