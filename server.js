@@ -5,7 +5,8 @@ var methodOverride = require("method-override");
 // Import routes and give the server access to them.
 var routes = require("./controllers/burgerController.js");
 // Set Handlebars.
-var exphbs = require("express-handlebars");
+
+var exphbs = require('express3-handlebars');
 var PORT = 3000 || process.env.PORT;
 
 var app = express();
