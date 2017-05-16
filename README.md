@@ -1,1 +1,1 @@
-# burger2
+burger app to eat and regurgitate the burgers with put, post, get

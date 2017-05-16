@@ -3,10 +3,10 @@ var connection;
 
 if (process.env.JAWSDB_GOLD_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_GOLD_URL);
-}else{
+} else {
     connection = mysql.createConnection({
-        host: "localhost", 
-        user: "root", 
+        host: "localhost",
+        user: "root",
         password: "",
         database: "burgers_db"
     });
