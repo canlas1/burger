@@ -33,8 +33,8 @@ router.put("/burgers/eat", function(req, res) {
 
 
 //getting ID from index input
-router.put("/burgers/regurgitate", function(req, res) {
-  burger.regurgitate(req.body.burger_id, function(result){
+router.put("/burgers/update", function(req, res) {
+  burger.update(req.body.burger_id, function(result){
     console.log(result);
     res.redirect("/");
   });

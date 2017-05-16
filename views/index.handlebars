@@ -49,7 +49,7 @@
           <li>
             {{this.burger_name}}
 
-            <form action="/burgers/regurgitate?_method=PUT" method="POST">
+            <form action="/burgers/update?_method=PUT" method="POST">
               <input type="hidden" name="burger_id" value={{this.id}} id= "input_devoured">
               <button type="submit">Submit!</button>
             </form>

@@ -6,7 +6,7 @@ var methodOverride = require("method-override");
 var router = require("./controllers/burgerController.js");
 // Set Handlebars.
 
-var exphbs = require('express3-handlebars');
+var exphbs = require('express-handlebars');
 var PORT = 3000 || process.env.PORT;
 
 var app = express();
