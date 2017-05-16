@@ -1,5 +1,6 @@
 // Dependencies
 var express = require("express");
+var app = express();
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 // Import routes and give the server access to them.
@@ -7,9 +8,9 @@ var router = require("./controllers/burgerController.js");
 // Set Handlebars.
 
 var exphbs = require('express-handlebars');
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3000; 
 
-var app = express();
+
 
 
 
