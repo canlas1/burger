@@ -3,7 +3,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 // Import routes and give the server access to them.
-var routes = require("./controllers/burgerController.js");
+var router = require("./controllers/burgerController.js");
 // Set Handlebars.
 
 var exphbs = require('express3-handlebars');
@@ -23,7 +23,7 @@ app.use(methodOverride("_method"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-app.use("/", routes);
+app.use("/", router);
 
 
 
