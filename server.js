@@ -7,7 +7,7 @@ var router = require("./controllers/burgerController.js");
 // Set Handlebars.
 
 var exphbs = require('express-handlebars');
-var PORT = 3000 || process.env.PORT;
+var PORT = process.env.PORT || 3000;
 
 var app = express();
 
