@@ -1,13 +1,13 @@
 {
   "name": "burger",
-  "version": "1.0.9",
-  "description": "Dennis Burger App",
+  "version": "1.0.0",
+  "description": "",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "express3-handlebars": "^0.5.2",
     "express-handlebars": "^3.0.0",
+    "express3-handlebars": "^0.5.2",
     "method-override": "^2.3.8",
     "mysql": "^2.13.0",
     "path": "^0.12.7"
@@ -21,10 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/canlas1/burger.git"
   },
-  "keywords": [
-    "burger"
-  ],
-  "author": "Dennis Canlas",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/canlas1/burger/issues"
